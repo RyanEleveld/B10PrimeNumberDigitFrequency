@@ -5,10 +5,10 @@ import java.io.FileWriter;
 
 
 public class Main{
-    private static int _MAXPRIME=100000000; //DEFAULT: 100000000
-    private static int _MAXSAMPLES=10000; //DEFAULT: 10000;
     //Java main Method
     public static void main(String [] args) {
+        int _MAXPRIME=100000000; //DEFAULT: 100000000
+        int _MAXSAMPLES=10000; //DEFAULT: 10000;
         //Catches IOException e
         try{
             //initializes BufferedWriter outputWriter to provide hard trail
