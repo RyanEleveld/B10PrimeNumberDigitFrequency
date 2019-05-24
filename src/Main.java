@@ -79,9 +79,6 @@ public class Main{
                     System.out.println(e.getMessage());
                 }
 
-                
-                
-
         /*for (int i: randomIdx){
             System.out.print(i + ",");
         }
@@ -93,11 +90,16 @@ public class Main{
             counter++;
         }*/
             }
+
+            //Initialize Statistics Writer working variables
             double sampleMean = 0;
+            //Calculate Sample Mean
             for (double i: avgDigits){sampleMean=sampleMean + i/avgDigits.length;}
             double sampleVar = 0;
+            //Calculate Sample Standard Deviation
             for (double i: avgDigits){sampleVar = sampleVar + Math.pow(i-sampleMean,2)/avgDigits.length;}
 
+            //Write Sampling Distribution Data to file
             statsWriter.write("Sample Mean: " + sampleMean);
             statsWriter.newLine();
             statsWriter.write("Sample StDev: " + Math.pow(sampleVar,0.5));
